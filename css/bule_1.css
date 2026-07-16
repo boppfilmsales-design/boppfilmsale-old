@@ -1,0 +1,80 @@
+﻿@charset "utf-8";
+/*网页整体*/
+*{margin:0;padding:0;}
+img{border:0;}
+body {color: #000000;font-size: 12px;font-family: Arial; background:url(../images/bule_2/bg.jpg) repeat-x;}
+/*默认链接*/
+a {font-size: 12px;color: #000000;}
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover {text-decoration: none;color: #CC0000;}
+a:active {text-decoration: none;}
+
+.black{color:#000000;}
+.grey{color:#666666;}
+.white{color:#FFFFFF;}
+.red{color:#CC0000;}
+.yellow{color:#FFFF00;}
+.orange{color:#FF9900;}
+.bule{color:#CC0000;}
+.green{color:#00FF00;}
+
+input{height:16px;vertical-align:middle;}
+.input_submit{
+	color:#FFFFFF;
+	background:#CC0000;
+
+repeat-x; 		height:20px;
+	border:0;
+}
+
+/*网页主体*/
+#main{ width:990px; margin:10px auto; padding:0 0 0 10px ;}
+/*公司名称*/
+.company_name{font-size:28px; color:#575757; font-weight:bold;}
+/*导航栏*/
+#menu{background: url(../images/bule_1/menu_bg.gif) repeat-x; margin:0 0 8px 0; }
+#menu a{display:block; float:left; width:100%; height:50px; text-align:center; line-height:50px; font-weight:bold; color:#FFFFFF;font-size:14px; text-align:center; }
+#menu a:hover{background: url(../images/bule_1/menu_bg1.gif) repeat-x;}
+/*左边分类*/
+#left_class{border:#DDDDDD 1px solid; background:#FFFFFF;}
+#left_class h6{font-size:14px; font-weight:bold; color:#ffffff; height:30px;  background: url(../images/bule_1/title_bg.gif) repeat-x; line-height:30px; margin:1px; padding-left:8px;}
+#left_class ul{list-style-type:none;}
+#left_class ul li a{color:#000000;  padding:0 0 0 20px; margin:0 1px 0 1px; height:30px; line-height:30px; display:block; background:url(../images/icon.gif) no-repeat 10px;}
+#left_class ul li a:hover{background:#CC0000 url(../images/icon1.gif) no-repeat 10px; color:#FFFFFF;}
+#left_class ul li ul li a{color:#000000; font-weight: normal;padding:0 0 0 30px; background:#FFFFFF; }
+#left_class ul li ul li a:hover{background:#999999;}
+/*左边联系方式*/
+#left_contact{border:#DDDDDD 1px solid; background:#FFFFFF; margin-top:8px;}
+#left_contact h6{font-size:14px; font-weight:bold; color:#ffffff; height:30px;  background: url(../images/bule_1/title_bg.gif) repeat-x; line-height:25px; margin:1px; padding-left:8px;}
+#left_contact p{margin:5px; line-height:30px;}
+/*网页底部*/
+#foot{border-top:#DDDDDD 1px solid; margin-top:8px; background: #FFFFFF; }
+#foot td{color:#666666;padding:5px; line-height:25px;}
+#foot a{color: #666666;}
+
+#top_flash{margin-bottom:8px;}
+/*内容显示区*/
+#right_main{border:#DDDDDD 1px solid; background:#FFFFFF; margin:0; padding:10px;overflow:hidden;text-overflow:ellipsis; width:720px;}
+#right_main td{padding:3px;}
+
+.weizhi{ color:#000000; font-size:20px; padding:2px;}
+.line_buttom_hui{border-bottom:#CCCCCC solid 1px;}
+.hangju{line-height:25px; padding:3px;}
+.border_hui{border:#E7E7E7 1px solid;}
+.line_buttom_hui_xuxian{border-bottom:#E7E7E7 1px dashed;}
+.border_hui_xuxian{border:#E7E7E7 1px dashed;}
+/*分页样式*/
+#page {padding:8px; margin: 3px;  text-align: center; clear:both;}
+#page a{border:#CC0000 1px solid; padding:2px 5px; margin:2px; color:#CC0000; text-decoration:none;}
+#page a:hover{color:#FFFFFF; background:#CC0000;}
+#page span.current{border:#CC0000 1px solid;padding:2px 5px; margin:2px;color: #FFFFFF;background:#CC0000;}
+#page span.disabled{border:#EEEEEE 1px solid;padding:2px 5px; margin:2px;color: #DDDDDD;}
+#page span.text {border:#CCCCCC 1px solid;padding:2px 5px; margin:2px;color: #666666;}
+/*产品图片*/
+.Pro_Info{text-align:center;border-bottom:1px solid #ccc; margin-bottom:5px;}
+.Pro_Images{padding:2px;}
+.Pro_Images img{display:inline; width:80px; height:80px;margin:0 5px;border:1px solid #ccc;filter:alpha(opacity=50);opacity:0.3;cursor:pointer;}
+.Pro_Images .active{filter:alpha(opacity=100);opacity:1;border-color:#CC0000;}
+.Pro_BigImage{text-align:center;background:#fff;}
+.Pro_BigImage img{margin:0 auto;cursor:pointer;}

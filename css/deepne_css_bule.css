@@ -1,0 +1,153 @@
+﻿body {FONT-SIZE: 12px; COLOR: #3A3A3A; LINE-HEIGHT: 20px; FONT-FAMILY: Times New Roman,Verdana, Geneva, Arial, helvetica, sans-serif; margin-bottom:0px; margin-top:0px; margin-left:0px; margin-right:0px;background:url(../images/bule_2/bg.jpg) repeat-x top #DEF2FB;}
+/*网站全局默认样式*/
+.dleft{float:left;}
+.ztitle{font-weight:bold; font-size:14px;color:#721800;}
+.biankuang{border:1px solid #EEEEEE;}
+.hui{border:1px solid #EEEEEE;}
+.huang{border:1px solid #c4aa85;}
+.hide{
+      display:block;
+
+	  float:left;  	 
+	  }
+.hide a{
+float:left;  	 
+	  }
+h1{
+	margin:15px;
+	font-size: 12px;
+	text-align: center;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	}
+	
+.weizhi{ color:#245E9D; font-size:20px; padding:2px;}
+.line_buttom_hui{border-bottom:#CCCCCC solid 1px;}
+.hangju{line-height:25px; padding:3px;}
+.border_hui{border:#E7E7E7 1px solid;}
+.line_buttom_hui_xuxian{border-bottom:#E7E7E7 1px dashed;}
+.border_hui_xuxian{border:#E7E7E7 1px dashed;}
+/*头部*/
+.header{width:1000px; margin:auto; height:90px;}
+.logo_l{width:800px;float:left; font-size:30px; font-weight:bold; }
+  .logo{float:left; margin:20PX 0 0 5px; height:60px; line-height:60px;}
+  .company_name{float:left; font-size:34px; font-weight:bold; height:60px; line-height:60px; text-align:left; align:top; font-family: "黑体", Helvetica, sans-serif; font-weight: 600px; width:450px; overflow:hidden;}
+  .company_name1{float:left; font-size:34px; font-weight:bold; height:60px; line-height:60px; text-align:left; align:top; font-family: Arial, Helvetica, sans-serif; font-weight: 700px; width:450px; overflow:hidden;}
+.logo_r{width:200px; float:left; height:60px;}
+.bq{width:200px; float:left; height:20px; padding-top:20px; padding-bottom:20px;  text-align:center;}
+.tz{width:200px; float:left; height:20px; line-height:20px; text-align:center;}
+/*网站导航*/
+.menu_box{height:27px; width:100%; background:url(../images/nav.gif) center; margin: 0px auto;}
+.menu{height:27px;width:1000px; margin: 0px auto;}
+.menu a{display:block; font-weight:bold; font-size:14px;}
+.menu a:link{color:#fff; display:block; text-decoration:none;font-weight:bold; font-size:14px;height:27px; line-height:27px;}
+.menu a:visited{color:#fff; display:block; text-decoration:none;font-weight:bold; font-size:14px;height:27px; line-height:27px;}
+.menu a:hover{background-image:url(../images/bg_h.gif); color:#fff; display:block; text-decoration:none;font-weight:bold; font-size:14px; height:27px; line-height:27px;}
+
+
+/*系统全局默认样式*/
+a:link {
+	color: #4C4C4C;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #4C4C4C;
+}
+a:hover {
+	text-decoration: underline;
+	color:#096FE1;
+}
+a:active {
+	text-decoration: none;
+	color: #990000;
+}
+/*导航条搜索*/
+.menu_search{width:250px; float:right; padding-top:8px; padding-bottom:8px;}
+/*文本框颜色*/
+.wbk{border:1px solid #999999;}
+/*banner*/
+.banner{ width:1000px;  margin:auto; margin-top:0px; margin-bottom:3px;}
+/*整体*/
+.main{width:1000px; margin:auto; height:100%; background:#FFF;}
+.left{width:244px; margin-right: 5px; height:100%; float:left;} 
+/*左侧产品分类*/
+.left_title{width:244px; height:34px; background-image:url(../images/dh_bg.png); line-height:34px;}
+.left_title h3{height:24px;text-align:left; font-size:14px; color:#ffffff; line-height:24px; margin:0 0 0 45px;}
+.left_c{width:242px;border-bottom:#ffffff 0px solid;background:#; border-right:#ffffff 0px solid; border-left:#ffffff 0px solid; padding-bottom:2px; margin-bottom:6px;margin-top:6px;}
+.left_news {width:225px;border-bottom:#ffffff 0px solid;background:#; border-right:#ffffff 0px solid; border-left:#ffffff 0px solid; padding-bottom:2px; margin-bottom:6px;margin-top:6px; margin-left: 12px;}
+.p_list{width:210px; float:left; padding-left:10px; padding-right:10px; height:35px; line-height:35px;}
+.list{width:225px; float:left; height:35px; line-height:35px; border-bottom:#cbcbcb 0px dotted; font-size:13px; background:url(../images/big_class_bg.gif) no-repeat;}
+.list a{float:left; height:28px; line-height:28px; border-bottom:#cbcbcb 0px dotted; font-size:13px; padding-left:15px;}
+.list_s{float:left; height:28px; line-height:28px; border-bottom:#cbcbcb 0px dotted; font-size:13px; margin:0 0 0 10px;}
+.list_s a{float:left; height:28px; line-height:28px; border-bottom:#cbcbcb 0px dotted; font-size:13px; margin:0 0 0 10px;}
+
+.big_class_bg{background:url(../images/big_class_bg.gif) no-repeat;}
+/*左侧联系我们*/
+.map{width:242px; float:left; text-align:center; height:50px;}
+.left_contact{width:220px; float:left; padding-left:12px; padding-right:10px;}
+/*框架右侧*/
+.right{width:750px; float:left; height:100%}
+.index_company{width:750px; float:left; }
+.index_news{width:375px; float:left; }
+.icompany{width:745px; height:34px; line-height:30px;background:url(../images/bg_xian.png) no-repeat #FFF;}
+.company_ico{width:20px; height:34px; float:left;}
+.company_title{width:270px; float:left; height:34px;}
+.cmore{width:60px; float:left; height:34px;}
+.a_content{ padding:5px 10px 5px 10px; float:left; width:730px;}
+.c_content{ padding:5px; float:left; width:260px;}
+/*首页新闻*/
+.inews{width:370px; height:34px; line-height:30px; background-image:url(../images/bg_xian.png);}
+.index_news_title{width:360px;font-size:12px; border-bottom:1px dashed #CCCCCC; height:23px; line-height:23px;}
+.news_ico{width:19px; float:left; padding-top:7px; padding-bottom:7px;}
+.news_list{width:260px; float:left;}
+.news_time{width:80px; float:left;}
+/*首页最新产品*/
+.iproducts{width:745px; height:34px; line-height:30px; background-image:url(../images/bg_xian.png);}
+.products_ico{width:20px; height:34px; float:left;}
+.products_title{width:650px; float:left; height:34px;}
+.cmore{width:60px; float:left; height:34px;}
+.products_content{width:740px; float:left; height:100%; color:#4C4C4C;}
+/*左侧搜索*/
+.left_search{width:220px; padding:10px;}
+/*内页*/
+.n_content{width:726px; float:left; height:100%; padding:10px;}
+.foot { color:#FFF; width: 1000px; margin: 0px auto;}
+.foot1 { color:#FFF;}
+.foot1 a {text-decoration: none;color:#ffffff;}
+.foot1 a:hover {text-decoration: underline;color:#003547;}
+/*产品分页*/
+.p_page{width:720px; float:left; height:100%; line-height:30px; padding:10px;}
+/*内页新闻*/
+.n_news_title{width:720px; border-bottom:1px dashed #CCCCCC; height:28px; line-height:28px;}
+.n_news_ico{width:19px; float:left; padding-top:7px; padding-bottom:7px;}
+.n_news_list{width:500px; float:left;}
+.n_news_time{width:180px; float:left;}
+/*新闻详细页*/
+.show_n_title{width:720px; float:left; height:30px; line-height:30px; text-align:center}
+.show_n_c{width:718px; border:1px dashed #CCCCCC; background-color:#F7F7F7; height:25px; line-height:25px; text-align:right;}
+.show_n_content{width:720px; line-height:25px; float:left;}
+.other_news{width:718px; float:left; height:35px; line-height:35px; border:1px dashed #999999; background-color:#F7F7F7;}
+
+.weizhi{ color:#245E9D; font-size:20px; padding:2px;}
+.line_buttom_hui{border-bottom:#CCCCCC solid 1px;}
+.hangju{line-height:25px; padding:3px;}
+.border_hui{border:#E7E7E7 1px solid;}
+.line_buttom_hui_xuxian{border-bottom:#E7E7E7 1px dashed;}
+.border_hui_xuxian{border:#E7E7E7 1px dashed;}
+/*分页样式*/
+#page {padding:8px; margin: 3px;  text-align: center; clear:both;}
+#page a{border:#096FE1 1px solid; padding:2px 5px; margin:2px; color:#096FE1; text-decoration:none;}
+#page a:hover{color:#FFFFFF; background:#096FE1;}
+#page span.current{border:#01B0ED 1px solid;padding:2px 5px; margin:2px;color: #FFFFFF;background:#096FE1;}
+#page span.disabled{border:#EEEEEE 1px solid;padding:2px 5px; margin:2px;color: #DDDDDD;}
+#page span.text {border:#096FE1 1px solid;padding:2px 5px; margin:2px;color: #096FE1;}
+/*产品图片*/
+.Pro_Info{text-align:center;border-bottom:1px solid #ccc; margin-bottom:5px;}
+.Pro_Images{padding:2px;}
+.Pro_Images img{display:inline; width:80px; height:80px;margin:0 5px;border:1px solid #ccc;filter:alpha(opacity=50);opacity:0.3;cursor:pointer;}
+.Pro_Images .active{filter:alpha(opacity=100);opacity:1;border-color:#999;}
+.Pro_BigImage{text-align:center;background:#fff;}
+.Pro_BigImage img{margin:0 auto;cursor:pointer;}

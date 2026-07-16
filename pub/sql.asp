@@ -1,0 +1,61 @@
+﻿<%
+
+'--------定义部份------------------
+Dim Fy_Post,Fy_Get,Fy_In,Fy_Inf,Fy_Xh,Fy_db,Fy_dbstr,Kill_IP,WriteSql
+'自定义需要过滤的字串,用 "|" 分隔
+'Fy_In = "'|;|and|(|)|exec|insert|select|delete|update|count|*|%|chr|mid|master|truncate|char|declare"
+Fy_In = "'|exec|insert|select|delete|update|count|mid|master|truncate|declare"
+Kill_IP=True
+WriteSql=True
+'----------------------------------
+
+
+Fy_Inf = split(Fy_In,"|")
+'--------POST部份------------------
+If Request.Form<>"" Then
+For Each Fy_Post In Request.Form
+For Fy_Xh=0 To Ubound(Fy_Inf)
+If Instr(LCase(Request.Form(Fy_Post)),Fy_Inf(Fy_Xh))<>0 Then
+If WriteSql=True Then
+conn.Execute("insert into yuzhiguo_sql(Sqlin_IP,SqlIn_Web,SqlIn_FS,SqlIn_CS,SqlIn_SJ) values('"&Request.ServerVariables("REMOTE_ADDR")&"','"&Request.ServerVariables("URL")&"','POST','"&Fy_Post&"','"&replace(Request.Form(Fy_Post),"'","''")&"')")
+conn.close
+Set conn = Nothing
+End If
+Response.write "<Script Language=JavaScript>alert('Tip：↓\n\nYour IP address has been locked, can not visit the site!');window.close();</Script>"
+Response.End
+End If
+Next
+Next
+End If
+'----------------------------------
+
+'--------GET部份-------------------
+If Request.QueryString<>"" Then
+For Each Fy_Get In Request.QueryString
+For Fy_Xh=0 To Ubound(Fy_Inf)
+If Instr(LCase(Request.QueryString(Fy_Get)),Fy_Inf(Fy_Xh))<>0 Then
+If WriteSql=True Then
+conn.Execute("insert into yuzhiguo_sql(Sqlin_IP,SqlIn_Web,SqlIn_FS,SqlIn_CS,SqlIn_SJ) values('"&Request.ServerVariables("REMOTE_ADDR")&"','"&Request.ServerVariables("URL")&"','GET','"&Fy_Get&"','"&replace(Request.QueryString(Fy_Get),"'","''")&"')")
+conn.close
+Set conn = Nothing
+End If
+Response.write "<Script Language=JavaScript>alert('Tip：↓\n\nYour IP address has been locked, can not visit the site!');window.close();</Script>"
+Response.End
+End If
+Next
+Next
+End If
+
+If Kill_IP=True Then
+Dim Sqlin_IP,rsKill_IP,Kill_IPsql
+Sqlin_IP=Request.ServerVariables("REMOTE_ADDR")
+Kill_IPsql="select Sqlin_IP from yuzhiguo_sql where Sqlin_IP='"&Sqlin_IP&"' and kill_ip=true"
+Set rsKill_IP=conn.execute(Kill_IPsql)
+If Not(rsKill_IP.eof or rsKill_IP.bof) Then
+Response.write "<Script Language=JavaScript>alert('Tip：↓\n\nYour IP address has been locked, can not visit the site!');window.close();</Script>"
+Response.End
+End If
+rsKill_IP.close
+
+End If
+%>

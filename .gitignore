@@ -1,0 +1,16 @@
+# 第三方 / 运行时生成 / 冗余，不纳入版本库
+aspnet_client/
+HttpErrors/
+huiguerdata/
+yuzhiguoeditor/
+
+# 操作系统 / 编辑器文件
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+
+# 敏感配置（如有数据库密码等，按需添加）
+# *.mdb
+# *.config

