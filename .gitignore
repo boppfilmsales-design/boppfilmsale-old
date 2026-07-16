@@ -4,6 +4,17 @@ HttpErrors/
 huiguerdata/
 yuzhiguoeditor/
 
+# 本地排查/临时文件（非源码）
+staged.txt
+push.log
+tracked.txt
+commit.log
+
+# 图片资源（暂不上传，后续走对象存储/CDN）
+# 如需恢复：从下方移除对应行，再 git add -f 强制加入
+images/
+pic/
+
 # 操作系统 / 编辑器文件
 .DS_Store
 Thumbs.db
